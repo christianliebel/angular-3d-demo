@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", "Segoe UI", Helvetica, sans-serif; 
+}
+
+#modifier {
+	height: 90px;
+	margin: 10px;
+}
+
+#stats {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}

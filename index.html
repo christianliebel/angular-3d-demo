@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="3d-demo">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+				
+		<title>Angular 3D Demo</title>
+		
+		<link rel="stylesheet" href="assets/style.css"></link>
+	</head>
+	<body>
+		<div ng-controller="mainController">
+			<div id="modifier">
+				<h3>Universe Configurator</h3>
+				<label>
+					Scale:
+					<input type="number" ng-model="model.scale" min="1" max="25" />
+				</label>
+				<div>
+					Stars:
+					<button ng-click="addStars(100)">+100</button>
+					<button ng-click="addStars(1000)">+1000</button>
+					<button ng-click="addStars(10000)">+10000</button>
+				</div>
+			</div>
+			<div id="container"></div>
+		</div>
+		
+		<script src="vendor/angular.js"></script>
+		<script src="vendor/tween.js"></script>
+		<script src="vendor/three.js"></script>
+		<script src="vendor/TrackballControls.js"></script>
+		<script src="vendor/touchpolyfill.js"></script>
+		<script src="vendor/stats.js"></script>
+		
+		<script src="source/example.js"></script>
+	</body>	
+</html>
