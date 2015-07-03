@@ -1,6 +1,8 @@
 body {
 	margin: 0;
-	font-family: "Helvetica Neue", "Segoe UI", Helvetica, sans-serif; 
+	font-family: "Helvetica Neue", "Segoe WP", Helvetica, sans-serif;
+	background: black;
+	color: white;
 }
 
 #modifier {
