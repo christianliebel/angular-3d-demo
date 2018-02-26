@@ -58,6 +58,7 @@
 		
 		// Sphere
 		var textureLoader = new THREE.TextureLoader();
+		textureLoader.setCrossOrigin('raw.githubusercontent.com'); // Required for RawGit demo, you can leave this out.
 		textureLoader.load('assets/earth.jpg', function(texture) {		
 			var geometry = new THREE.SphereGeometry(5, 50, 50);
 			var material = new THREE.MeshLambertMaterial({map: texture});
